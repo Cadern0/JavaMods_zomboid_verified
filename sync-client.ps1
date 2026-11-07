@@ -63,9 +63,21 @@ function Assert-GameNotRunning {
 }
 
 function Resolve-PathSafe {
-    param([string]$Path, [string[]]$AllowedRoots)
+    # Sem [string] no $Path: um Object[] precisa ser detectado, nao convertido.
+    # Chamadas do tipo "Resolve-PathSafe $path, @($roots)" entregam UM array e
+    # geram mensagens ilegiveis como
+    # "C:\...\ZombieBuddy.jar System.Object[] (fora de )".
+    # Use sempre parametros nomeados: -Path ... -AllowedRoots @(...).
+    param($Path, [string[]]$AllowedRoots)
+    if ($Path -is [array] -or $Path -isnot [string] -or -not $Path) {
+        throw "Caminho de destino invalido no manifesto: $Path"
+    }
+    if (-not $AllowedRoots -or $AllowedRoots.Count -eq 0) {
+        throw "Nenhum diretorio permitido informado para validar: $Path"
+    }
     $full = [IO.Path]::GetFullPath($Path)
     foreach ($root in $AllowedRoots) {
+        if ($root -is [array] -or -not $root) { continue }
         $rootFull = [IO.Path]::GetFullPath($root).TrimEnd('\', '/') + [IO.Path]::DirectorySeparatorChar
         # Exige separador apos a raiz: "C:\Game" nao pode aceitar "C:\GameEvil".
         if ($full.StartsWith($rootFull, [StringComparison]::OrdinalIgnoreCase)) {
@@ -225,7 +237,7 @@ foreach ($cat in $categories) {
             try {
                 $destPath = Resolve-PathSafe -Path $destPath -AllowedRoots @($gameDir, $userModsDir)
             } catch {
-                Write-Step "Caminho invalido para ${name}: $_" "Red"
+                Write-Step "Caminho invalido para ${name}: $($_.Exception.Message)" "Red"
                 exit 1
             }
             if ((Test-Within $destPath $gameDir) -and -not (Test-Within $destPath $userModsDir)) {
