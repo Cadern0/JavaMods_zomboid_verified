@@ -1,0 +1,16 @@
+{
+  "engine_core": {
+    "zombiebuddy": {
+      "version": "v2026.11.06-202542",
+      "files": [
+        {
+          "name": "ZombieBuddy.jar",
+          "target_path": "%GAME_DIR%/java/ZombieBuddy.jar",
+          "sha256": "eb79b9876332010733a8e0d7ce4fe0377846059a9e28859029e2a0fb449f6cf2",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/v2026.11.06-202542/ZombieBuddy.jar"
+        }
+      ]
+    }
+  },
+  "java_mods": {}
+}
