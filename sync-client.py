@@ -515,13 +515,29 @@ def _is_windows() -> bool:
     return os.name == "nt"
 
 
-def _agent_arg() -> str:
+def _client_is_windows(game_dir: Path) -> bool:
+    """True se o cliente que roda a JVM e o build Windows (nativo ou via Proton).
+
+    O SO do host nao decide isso: no Linux o jogo pode ser o build Windows
+    executado pelo Proton (só existe ProjectZomboid64.exe na pasta).
+    """
+    if _is_windows():
+        return True
+    # Instalacao Linux rodando o build Windows no Proton: so existe o .exe
+    return (game_dir / "ProjectZomboid64.exe").is_file() and not (
+        game_dir / "ProjectZomboid64"
+    ).is_file()
+
+
+def _agent_arg(game_dir: Path) -> str:
     """Argumento da JVM que ativa o ZombieBuddy (ver doc/Installation.md do projeto).
 
-    No Windows o JRE do jogo nao consegue carregar instrument.dll sozinho; o
-    zbNative.dll resolve isso e carrega o ZombieBuddy.jar como agente.
+    No build Windows o JRE do jogo nao consegue carregar instrument.dll sozinho;
+    o zbNative.dll resolve isso e carrega o ZombieBuddy.jar como agente.
     """
-    return "-agentlib:zbNative" if _is_windows() else "-javaagent:ZombieBuddy.jar"
+    if _client_is_windows(game_dir):
+        return "-agentlib:zbNative"
+    return "-javaagent:ZombieBuddy.jar"
 
 
 def _is_zb_arg(value: str) -> bool:
@@ -603,9 +619,9 @@ def _activate_zombiebuddy(game_dir: Path, dry_run: bool) -> bool:
     data = _read_game_json(json_path)
     changed = _clean_zb_legacy(data)
     ready = True
-    if _is_windows() and not (game_dir / ZB_DLL).is_file():
+    if _client_is_windows(game_dir) and not (game_dir / ZB_DLL).is_file():
         log(
-            f"{ZB_DLL} ausente: no Windows ele e obrigatorio para ativar o ZombieBuddy. "
+            f"{ZB_DLL} ausente: no build Windows ele e obrigatorio para ativar o ZombieBuddy. "
             "Peca ao administrador do servidor para republicar incluindo o zbNative.dll.",
             "error",
         )
@@ -613,7 +629,7 @@ def _activate_zombiebuddy(game_dir: Path, dry_run: bool) -> bool:
 
     key = _find_key(data, "vmArgs") or "vmArgs"
     vm_args = _as_str_list(data.get(key))
-    wanted = _agent_arg()
+    wanted = _agent_arg(game_dir)
     new_args = [arg for arg in vm_args if not _is_zb_arg(arg)]
     if ready:
         # Primeiro argumento: o agente precisa carregar antes do jogo.
