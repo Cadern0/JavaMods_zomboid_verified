@@ -1,13 +1,19 @@
 {
   "engine_core": {
     "zombiebuddy": {
-      "version": "v2026.11.06-203825",
+      "version": "v2026.11.07-001100",
       "files": [
         {
           "name": "ZombieBuddy.jar",
-          "target_path": "%GAME_DIR%/java/ZombieBuddy.jar",
+          "target_path": "%GAME_DIR%/ZombieBuddy.jar",
           "sha256": "eb79b9876332010733a8e0d7ce4fe0377846059a9e28859029e2a0fb449f6cf2",
-          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/v2026.11.06-203825/ZombieBuddy.jar"
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/v2026.11.07-001100/ZombieBuddy.jar"
+        },
+        {
+          "name": "zbNative.dll",
+          "target_path": "%GAME_DIR%/zbNative.dll",
+          "sha256": "c2ae9335e717ee24b2f4a40d1a3bf77f1519762a72a0459e766a2bbafc077f6c",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/v2026.11.07-001100/zbNative.dll"
         }
       ]
     }
