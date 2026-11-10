@@ -1,22 +1,620 @@
 {
   "engine_core": {
     "zombiebuddy": {
-      "version": "v2026.11.07-001100",
+      "version": "pzsm-20261110-033248",
       "files": [
         {
           "name": "ZombieBuddy.jar",
           "target_path": "%GAME_DIR%/ZombieBuddy.jar",
           "sha256": "eb79b9876332010733a8e0d7ce4fe0377846059a9e28859029e2a0fb449f6cf2",
-          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/v2026.11.07-001100/ZombieBuddy.jar"
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ZombieBuddy.jar"
         },
         {
           "name": "zbNative.dll",
           "target_path": "%GAME_DIR%/zbNative.dll",
           "sha256": "c2ae9335e717ee24b2f4a40d1a3bf77f1519762a72a0459e766a2bbafc077f6c",
-          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/v2026.11.07-001100/zbNative.dll"
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/zbNative.dll"
         }
       ]
     }
   },
-  "java_mods": {}
+  "java_mods": {
+    "sem-mod": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "sem-mod__Viewpoint.jar",
+          "target_path": "%USER_MODS%/Viewpoint/42/media/java/client/Viewpoint.jar",
+          "sha256": "67f83b05a27c4112ce9edc596da7c491d51e9015862dccafa8495f0b9352625e",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/sem-mod__Viewpoint.jar"
+        },
+        {
+          "name": "sem-mod__ViewpointLivingProps.jar",
+          "target_path": "%USER_MODS%/ViewpointLivingProps/42/media/java/client/ViewpointLivingProps.jar",
+          "sha256": "c459e4372a8ddc357872654f7eaf588d7f66ffd1cf2a09c1b4c3aff06068d744",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/sem-mod__ViewpointLivingProps.jar"
+        },
+        {
+          "name": "sem-mod__GrassierGrass.jar",
+          "target_path": "%USER_MODS%/GrassierGrass/42/media/java/client/GrassierGrass.jar",
+          "sha256": "04e3d2a08e416acdbab4778a58c95c24ee77b23dac19b5d8cb9411a9a531630d",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/sem-mod__GrassierGrass.jar"
+        },
+        {
+          "name": "sem-mod__ViewpointImmersiveWeathers.jar",
+          "target_path": "%USER_MODS%/ViewpointImmersiveWeathers/42/media/java/ViewpointImmersiveWeathers.jar",
+          "sha256": "4db8e20c6750374453e3ca3e30e44783b1b5ff782b87d05d04050a69d68e4a2c",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/sem-mod__ViewpointImmersiveWeathers.jar"
+        },
+        {
+          "name": "sem-mod__Barricades3D.jar",
+          "target_path": "%USER_MODS%/Barricades3D/42/media/java/client/Barricades3D.jar",
+          "sha256": "eddfd8b6c66586ba994ef77459ed01a34c3765fb9bf0e8acd2bb64f814ba8677",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/sem-mod__Barricades3D.jar"
+        },
+        {
+          "name": "sem-mod__CeilingLights.jar",
+          "target_path": "%USER_MODS%/CeilingLights/42/media/java/client/CeilingLights.jar",
+          "sha256": "2078fbaa32bc7d933ddb8fe48bba39ed7e584d57b924ba1ee0aadc9f674456c3",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/sem-mod__CeilingLights.jar"
+        },
+        {
+          "name": "sem-mod__ShelfContents3D.jar",
+          "target_path": "%USER_MODS%/ShelfContents3D/42/media/java/client/ShelfContents3D.jar",
+          "sha256": "d8c5c379ead2a1ea9a7365af2bedf0f7bb228278ad076c05f4c1d8077bcaafdd",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/sem-mod__ShelfContents3D.jar"
+        }
+      ]
+    },
+    "ProjectViewpointQOL": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ProjectViewpointQOL__ProjectViewpointQOL.jar",
+          "target_path": "%USER_MODS%/ProjectViewpointQOL/42/media/java/client/ProjectViewpointQOL.jar",
+          "sha256": "785e3cd92555496a4db82940e5fd9ecb370b82103d3ddeb39ee4139374aaebc4",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ProjectViewpointQOL__ProjectViewpointQOL.jar"
+        }
+      ]
+    },
+    "ProjectViewpointQOLControllerSupport": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ProjectViewpointQOLControllerSupport__ProjectViewpointControllerSupport.jar",
+          "target_path": "%USER_MODS%/ProjectViewpointQOLControllerSupport/42/media/java/client/ProjectViewpointControllerSupport.jar",
+          "sha256": "029a006fdff3fafc4473767896d94d54eda37d6c796a591cc0b20cbdee3925b0",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ProjectViewpointQOLControllerSupport__ProjectViewpointControllerSupport.jar"
+        }
+      ]
+    },
+    "ProjectViewpointQOLLegacy0.1.6": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ProjectViewpointQOLLegacy0.1.6__ProjectViewpointQOLLegacy.jar",
+          "target_path": "%USER_MODS%/ProjectViewpointQOLLegacy0.1.6/42/media/java/client/ProjectViewpointQOLLegacy.jar",
+          "sha256": "3f9d054830a0b669d87c595c910d22eb75ff4ca786ac8ce005c59fd96d02ee6b",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ProjectViewpointQOLLegacy0.1.6__ProjectViewpointQOLLegacy.jar"
+        }
+      ]
+    },
+    "ViewpointLight": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointLight__ViewpointHeadlightPlacement.jar",
+          "target_path": "%USER_MODS%/ViewpointLight/42/media/java/client/ViewpointHeadlightPlacement.jar",
+          "sha256": "7d3826027b16186138137ffc8519493c75b025de906083d4e029bbd942dcd770",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointLight__ViewpointHeadlightPlacement.jar"
+        }
+      ]
+    },
+    "ViewpointDoor": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointDoor__ViewpointDoorLighting.jar",
+          "target_path": "%USER_MODS%/ViewpointDoor/42/media/java/client/ViewpointDoorLighting.jar",
+          "sha256": "6b13cf9f087d9fd4a1ba845001b9cb4e9462e7c7568fe5213e0e2975a964df7f",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointDoor__ViewpointDoorLighting.jar"
+        }
+      ]
+    },
+    "ProjectViewpointADS": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ProjectViewpointADS__ProjectViewpointADS.jar",
+          "target_path": "%USER_MODS%/ProjectViewpointADS/42/media/java/client/ProjectViewpointADS.jar",
+          "sha256": "56c802cd04ffc6b9388aa2c550f2dbde555997949cfedfd0bedf872fa44bb84e",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ProjectViewpointADS__ProjectViewpointADS.jar"
+        }
+      ]
+    },
+    "ViewpointAdvancedMovement": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointAdvancedMovement__ViewpointAdvancedMovement.jar",
+          "target_path": "%USER_MODS%/ViewpointAdvancedMovement/42/media/java/client/ViewpointAdvancedMovement.jar",
+          "sha256": "a7a704ab5b2220e8cabecc518adb6034b3cba3dcba04163e886034ba176e44b0",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointAdvancedMovement__ViewpointAdvancedMovement.jar"
+        }
+      ]
+    },
+    "ViewpointAdvancedMovementServer": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointAdvancedMovementServer__ViewpointAdvancedMovementServer.jar",
+          "target_path": "%USER_MODS%/ViewpointAdvancedMovementServer/42/media/java/server/ViewpointAdvancedMovementServer.jar",
+          "sha256": "944afa02f42306efabb115f3775530c18085e4ef9c3a64fb511ac8f870202608",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointAdvancedMovementServer__ViewpointAdvancedMovementServer.jar"
+        }
+      ]
+    },
+    "ViewpointClassicCamera": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointClassicCamera__ViewpointClassicCamera.jar",
+          "target_path": "%USER_MODS%/ViewpointClassicCamera/42/media/java/client/ViewpointClassicCamera.jar",
+          "sha256": "cf405a9081f99f8b55eccaf106bd3811824aef99a707752f74151d7197117931",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointClassicCamera__ViewpointClassicCamera.jar"
+        }
+      ]
+    },
+    "ViewpointTrueBallistics": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointTrueBallistics__ViewpointTrueBallistics.jar",
+          "target_path": "%USER_MODS%/ViewpointTrueBallistics/42/media/java/ViewpointTrueBallistics.jar",
+          "sha256": "aaee2b68fd04aa516a388880cf000ef6e0775a5bdf30355a8d937048a16fea40",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointTrueBallistics__ViewpointTrueBallistics.jar"
+        }
+      ]
+    },
+    "ViewpointImmersiveEffects": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointImmersiveEffects__ImmersiveEffects.jar",
+          "target_path": "%USER_MODS%/ViewpointImmersiveEffects/42/media/java/client/ImmersiveEffects.jar",
+          "sha256": "bf54ae154a2ececa97f3f21189aa9daa00ff95a061047df91752b12d47b5ee4f",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointImmersiveEffects__ImmersiveEffects.jar"
+        }
+      ]
+    },
+    "ProjectViewpointNearVegetation": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ProjectViewpointNearVegetation__ProjectViewpointNearVegetation.jar",
+          "target_path": "%USER_MODS%/ProjectViewpointNearVegetation/42/media/java/client/ProjectViewpointNearVegetation.jar",
+          "sha256": "e00c608f9b2e6e26d2b84d400766e1a04b7447473396a9f8e7b3a982964af1f6",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ProjectViewpointNearVegetation__ProjectViewpointNearVegetation.jar"
+        }
+      ]
+    },
+    "ViewpointAdvancedThrowables": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointAdvancedThrowables__ViewpointAdvancedThrowables.jar",
+          "target_path": "%USER_MODS%/ViewpointAdvancedThrowables/42/media/java/client/ViewpointAdvancedThrowables.jar",
+          "sha256": "4e51004f3c3f7c2737f18e065076789c8753c6923f063d3fd7cbc1ff222e955e",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointAdvancedThrowables__ViewpointAdvancedThrowables.jar"
+        }
+      ]
+    },
+    "FletcherViewpoint": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "FletcherViewpoint__FletcherViewpoint.jar",
+          "target_path": "%USER_MODS%/FletcherViewpoint/42/media/java/client/FletcherViewpoint.jar",
+          "sha256": "dbe927765587ca70d7e092178d5c2ae77f9f220004e1a14ecd7695669be51b67",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/FletcherViewpoint__FletcherViewpoint.jar"
+        }
+      ]
+    },
+    "ViewpointTrueWeathers": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointTrueWeathers__ViewpointTrueWeathers.jar",
+          "target_path": "%USER_MODS%/ViewpointTrueWeathers/42/media/java/client/ViewpointTrueWeathers.jar",
+          "sha256": "a772096480e082a21f0588b85710250151c1b1d278762ba4720872d4f12c8234",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointTrueWeathers__ViewpointTrueWeathers.jar"
+        }
+      ]
+    },
+    "ViewpointTrueWeathersGameplay": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointTrueWeathersGameplay__TrueWeathersGameplay.jar",
+          "target_path": "%USER_MODS%/ViewpointTrueWeathersGameplay/42/media/java/TrueWeathersGameplay.jar",
+          "sha256": "f56ac6b0d89f838efed4750ecbc077b1003ed038a9111f927a90b0888891b46f",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointTrueWeathersGameplay__TrueWeathersGameplay.jar"
+        }
+      ]
+    },
+    "FishingView": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "FishingView__FishingView.jar",
+          "target_path": "%USER_MODS%/FishingView/42/media/java/client/FishingView.jar",
+          "sha256": "72352370b5b20eee4b37a061c115ecd84574662cfb5f4634ec5ce347508b0d10",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/FishingView__FishingView.jar"
+        }
+      ]
+    },
+    "ProjectViewpointKI5VehiclePartsFix": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ProjectViewpointKI5VehiclePartsFix__ViewpointVehiclePartsGuard.jar",
+          "target_path": "%USER_MODS%/ProjectViewpoint-KI5VehiclePartsFix/42/media/java/client/ViewpointVehiclePartsGuard.jar",
+          "sha256": "35971ffd6b60f1675d3404d71e60fcad7417b005911bbc0ad46c7bbbe9cdfe93",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ProjectViewpointKI5VehiclePartsFix__ViewpointVehiclePartsGuard.jar"
+        }
+      ]
+    },
+    "ViewpointBarricade": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointBarricade__ViewpointBarricades.jar",
+          "target_path": "%USER_MODS%/ViewpointBarricade/42/media/java/client/ViewpointBarricades.jar",
+          "sha256": "cbe10c19938bee69e93da02bb4058da433f7180d41d2f9f375d185e9d177dab0",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointBarricade__ViewpointBarricades.jar"
+        }
+      ]
+    },
+    "ViewpointRollingHills": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointRollingHills__ViewpointRollingHills.jar",
+          "target_path": "%USER_MODS%/ViewpointRollingHills/42/media/java/client/ViewpointRollingHills.jar",
+          "sha256": "1426028f792debc5c8a369e4a37c4d6e182f2fc699a408a5597923ab703f2dde",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointRollingHills__ViewpointRollingHills.jar"
+        }
+      ]
+    },
+    "OldPoint": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "OldPoint__OldPoint.jar",
+          "target_path": "%USER_MODS%/OldPoint/42/media/java/client/OldPoint.jar",
+          "sha256": "89beb260df08ae769e4c69b12a6d26c021d5d355e57c5a26abad0b02f55fd49c",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/OldPoint__OldPoint.jar"
+        }
+      ]
+    },
+    "ViewpointDeathCam": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointDeathCam__ViewpointDeathCam.jar",
+          "target_path": "%USER_MODS%/ViewpointDeathCam/42/media/java/client/ViewpointDeathCam.jar",
+          "sha256": "0e30cd4a5f056462dc7ba013a1f1d9be9b990fca7b06e2c41b7e0d45c9d9da20",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointDeathCam__ViewpointDeathCam.jar"
+        }
+      ]
+    },
+    "ViewpointStability": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointStability__ViewpointStability.jar",
+          "target_path": "%USER_MODS%/ViewpointStability/42/media/java/client/ViewpointStability.jar",
+          "sha256": "517da7eee8b4733cb3a26dcd0a52af650d32d1aa75e201c2b9bf07afbdffc756",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointStability__ViewpointStability.jar"
+        }
+      ]
+    },
+    "ImmersiveDriving": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ImmersiveDriving__ImmersiveDriving.jar",
+          "target_path": "%USER_MODS%/ImmersiveDriving/42/media/java/client/ImmersiveDriving.jar",
+          "sha256": "22eda2de782d078432698adb139a536e4ddd19cdbaf7f6c8900aad2c2ba3af04",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ImmersiveDriving__ImmersiveDriving.jar"
+        }
+      ]
+    },
+    "RollingHillsPhysics": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "RollingHillsPhysics__RollingHillsPhysics.jar",
+          "target_path": "%USER_MODS%/RollingHillsPhysics/42/media/java/RollingHillsPhysics.jar",
+          "sha256": "8a7a7255c89afadbc588f6eda2fd1e02bbbb7ea57f350ec9dd1290295b7d8ea9",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/RollingHillsPhysics__RollingHillsPhysics.jar"
+        }
+      ]
+    },
+    "HeliEvent": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "HeliEvent__HeliEvent.jar",
+          "target_path": "%USER_MODS%/HeliEvent/42/media/java/client/HeliEvent.jar",
+          "sha256": "5e16ee507d70e1f704b8262494402d2d1b0cbd5ce960ff951419ea4f10214e32",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/HeliEvent__HeliEvent.jar"
+        }
+      ]
+    },
+    "BasileDoors3D": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "BasileDoors3D__BasileDoors3D.jar",
+          "target_path": "%USER_MODS%/BasileDoors3D/42/media/java/client/BasileDoors3D.jar",
+          "sha256": "f3a885caa29058923a4ab121c18b18375fd06f789088d284fba4fcbc5e5e3cd1",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/BasileDoors3D__BasileDoors3D.jar"
+        }
+      ]
+    },
+    "ViewpointVehicleShellFix": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointVehicleShellFix__ViewpointVehicleShellFix.jar",
+          "target_path": "%USER_MODS%/ViewpointVehicleShellFix/42/media/java/client/ViewpointVehicleShellFix.jar",
+          "sha256": "c75b667056483b76f48d48bce6acae53346eedf98378d3fd96d7042c66480321",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointVehicleShellFix__ViewpointVehicleShellFix.jar"
+        }
+      ]
+    },
+    "HotBrassViewpoint": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "HotBrassViewpoint__HotBrassViewpoint.jar",
+          "target_path": "%USER_MODS%/HotBrassViewpoint/42/media/java/client/HotBrassViewpoint.jar",
+          "sha256": "eede64cf3e5b4766ea6e2f86848f76b1cd8ba71a304ca62c3f5e9dc6d519d939",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/HotBrassViewpoint__HotBrassViewpoint.jar"
+        }
+      ]
+    },
+    "GridRV": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "GridRV__GridRV.jar",
+          "target_path": "%USER_MODS%/GridRV/42/media/java/client/GridRV.jar",
+          "sha256": "f47c694f72d6fd6ba8be4102ebfed05c804c15d45916550a98a7e6a9a8939a5a",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/GridRV__GridRV.jar"
+        }
+      ]
+    },
+    "GridRVHost": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "GridRVHost__GridRVHost.jar",
+          "target_path": "%USER_MODS%/GridRVHost/42/media/java/server/GridRVHost.jar",
+          "sha256": "3e3c603c3790c04448ad6b64161021b419407f0687152e1bcf7aff0089c01b01",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/GridRVHost__GridRVHost.jar"
+        }
+      ]
+    },
+    "ViewpointLogWalls": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointLogWalls__ViewpointLogConstruction.jar",
+          "target_path": "%USER_MODS%/ViewpointLogWalls/42/media/java/client/ViewpointLogConstruction.jar",
+          "sha256": "123cb93784d97a0eb5264ab9795b43302d7a726b5da0b5105bd433340bdd3c77",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointLogWalls__ViewpointLogConstruction.jar"
+        }
+      ]
+    },
+    "WallTextureFixForViewpoint": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "WallTextureFixForViewpoint__WallTextureFixForViewpoint.jar",
+          "target_path": "%USER_MODS%/WallTextureFixForViewpoint/42/media/java/client/WallTextureFixForViewpoint.jar",
+          "sha256": "08e4532d157625757b97d5315772a0721d8bb02b5b6e58fc307e008d202c4703",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/WallTextureFixForViewpoint__WallTextureFixForViewpoint.jar"
+        }
+      ]
+    },
+    "GridVans": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "GridVans__GridVans.jar",
+          "target_path": "%USER_MODS%/GridVans/42/media/java/client/GridVans.jar",
+          "sha256": "29e62c73d7a4dbd1c132ce58ecd6af77e1dde79358e4915090bf6f1723e9dbd4",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/GridVans__GridVans.jar"
+        }
+      ]
+    },
+    "GridVansHost": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "GridVansHost__GridVansHost.jar",
+          "target_path": "%USER_MODS%/GridVansHost/42/media/java/server/GridVansHost.jar",
+          "sha256": "a5b9248069660e29fb5f0a89f41d34d878a5b1adbf82e998e9b56bda1efb8cdf",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/GridVansHost__GridVansHost.jar"
+        }
+      ]
+    },
+    "ViewpointVisualFixes": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointVisualFixes__ViewpointVisualFixes.jar",
+          "target_path": "%USER_MODS%/ViewpointVisualFixes/42/media/java/client/ViewpointVisualFixes.jar",
+          "sha256": "bcf610565bdca5c2d37c72958244ea840b1bdfdcfb3a8810534d5bab49d6376b",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointVisualFixes__ViewpointVisualFixes.jar"
+        }
+      ]
+    },
+    "HollowLightShaders": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "HollowLightShaders__HollowLightInstaller.jar",
+          "target_path": "%USER_MODS%/HollowLightShaders/42/media/java/client/HollowLightInstaller.jar",
+          "sha256": "cbee49513f6bac70994b5b87b132288ec51194f86169e98bde951641187d020b",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/HollowLightShaders__HollowLightInstaller.jar"
+        }
+      ]
+    },
+    "ViewpointALife": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointALife__ViewpointALife.jar",
+          "target_path": "%USER_MODS%/ViewpointALife/42/media/java/client/ViewpointALife.jar",
+          "sha256": "e11292c784031fe130b8dd0adf64c832be276a91c4ae850004ef452c91e5f975",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointALife__ViewpointALife.jar"
+        }
+      ]
+    },
+    "CorpseProxyLab": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "CorpseProxyLab__CorpseProxyWorld.jar",
+          "target_path": "%USER_MODS%/CorpseProxyLab/42/media/java/CorpseProxyWorld.jar",
+          "sha256": "fd52124c5882f9d81cabba07c9d3e27ef8b388e3a5850865da89d39de802ff24",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/CorpseProxyLab__CorpseProxyWorld.jar"
+        }
+      ]
+    },
+    "ShiftYourGear": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ShiftYourGear__GearShiftVisuals.jar",
+          "target_path": "%USER_MODS%/ShiftYourGear/42/media/java/client/GearShiftVisuals.jar",
+          "sha256": "b802172ff9f9991702fcd81ee3b5324ae865d8439fcb7f2276bb4e18600a9bb4",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ShiftYourGear__GearShiftVisuals.jar"
+        }
+      ]
+    },
+    "DeadWorksVehicleFramework": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "DeadWorksVehicleFramework__DeadWorksVehicleFramework.jar",
+          "target_path": "%USER_MODS%/DeadWorksVehicleFramework/42/media/java/DeadWorksVehicleFramework.jar",
+          "sha256": "19b627aa8d6cb599d8d811e718f61be9db5c118216c796324972aa3826994f39",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/DeadWorksVehicleFramework__DeadWorksVehicleFramework.jar"
+        }
+      ]
+    },
+    "MZInteriorsPetyarbuilt": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "MZInteriorsPetyarbuilt__MZInteriorsPetyarbuilt.jar",
+          "target_path": "%USER_MODS%/MZInteriorsPetyarbuilt/42/media/java/client/MZInteriorsPetyarbuilt.jar",
+          "sha256": "2f7faa18f85ad51c4e3ad316ccc348505e9fbf20d3a66b3473de5baa83c0b76a",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/MZInteriorsPetyarbuilt__MZInteriorsPetyarbuilt.jar"
+        }
+      ]
+    },
+    "MZInteriorsSteering": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "MZInteriorsSteering__MZInteriorsSteering.jar",
+          "target_path": "%USER_MODS%/MZInteriorsSteering/42/media/java/client/MZInteriorsSteering.jar",
+          "sha256": "d6d6c4ea49f7e99c9d2970501f5660ca3a36d7566c039281f510cce53248d8f8",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/MZInteriorsSteering__MZInteriorsSteering.jar"
+        }
+      ]
+    },
+    "ViewpointInteriors": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointInteriors__ViewpointInteriors.jar",
+          "target_path": "%USER_MODS%/ViewpointInteriors/42/media/java/client/ViewpointInteriors.jar",
+          "sha256": "10633388967496518f991db67668208077ca334316fcdff75cc771d95b239fca",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointInteriors__ViewpointInteriors.jar"
+        }
+      ]
+    },
+    "PzPerformanceFixes": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "PzPerformanceFixes__PzPerformanceFixes.jar",
+          "target_path": "%USER_MODS%/PzPerformanceFixes/42/media/java/PzPerformanceFixes.jar",
+          "sha256": "7460de49e9fba81fbcfdd66d3813c9a1f388b931e70446264f5f7359c264167e",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/PzPerformanceFixes__PzPerformanceFixes.jar"
+        }
+      ]
+    },
+    "RealLimbs": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "RealLimbs__RealLimbs.jar",
+          "target_path": "%USER_MODS%/RealLimbs/42/media/java/RealLimbs.jar",
+          "sha256": "9dcc89ba8607b3e73786160511ff4536dd703740a0c858d4f9ba20f7291f8114",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/RealLimbs__RealLimbs.jar"
+        }
+      ]
+    },
+    "ViewpointCompleteFixes": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointCompleteFixes__ViewpointCompleteFixes.jar",
+          "target_path": "%USER_MODS%/ViewpointCompleteFixes/42/media/java/client/ViewpointCompleteFixes.jar",
+          "sha256": "d616314b5bafb8e591f7879d02f024e0d85e9d8bd683445a29d7a415be1d2c9c",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointCompleteFixes__ViewpointCompleteFixes.jar"
+        }
+      ]
+    },
+    "ViewpointGpuMemoryFix": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointGpuMemoryFix__ViewpointGpuFix.jar",
+          "target_path": "%USER_MODS%/ViewpointGpuFix/42/media/java/client/ViewpointGpuFix.jar",
+          "sha256": "e55cf9b5c9ebfa3cc74af79f40878f6ba134456d42f4d492088f561968c806bc",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointGpuMemoryFix__ViewpointGpuFix.jar"
+        }
+      ]
+    },
+    "Super_Gore_by_mrdocs": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "Super_Gore_by_mrdocs__SuperGoreJava.jar",
+          "target_path": "%USER_MODS%/Super_Gore_by_mrdocs/42/media/java/client/SuperGoreJava.jar",
+          "sha256": "3c860d6d7084c867e372d7fcad93db6bda9df1b7239273aa45bf8bcb88278c5e",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/Super_Gore_by_mrdocs__SuperGoreJava.jar"
+        }
+      ]
+    },
+    "ViewpointVanillaSteering": {
+      "version": "pzsm-20261110-033248",
+      "files": [
+        {
+          "name": "ViewpointVanillaSteering__VanillaSteeringWheels.jar",
+          "target_path": "%USER_MODS%/ViewpointVanillaSteering/42/media/java/client/VanillaSteeringWheels.jar",
+          "sha256": "68cc2590b65287d01541270ef854772da0f6a65e87487407379430e753458f77",
+          "url": "https://github.com/Cadern0/JavaMods_zomboid_verified/releases/download/pzsm-20261110-033248/ViewpointVanillaSteering__VanillaSteeringWheels.jar"
+        }
+      ]
+    }
+  }
 }
